@@ -1,24 +1,30 @@
 import React from 'react';
+import {
+  Table,
+  Thead,
+  TableHeader,
+  TableData,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
+    <Table>
+      <Thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <TableHeader>Type</TableHeader>
+          <TableHeader>Amount</TableHeader>
+          <TableHeader>Currency</TableHeader>
         </tr>
-      </thead>
+      </Thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
           <tr key={id}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <TableData>{type}</TableData>
+            <TableData>{amount}</TableData>
+            <TableData>{currency}</TableData>
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
