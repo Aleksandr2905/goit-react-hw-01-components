@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Item, Status, Avatar, Name } from './FriendListItem.styled';
 
 export const FriendListItem = ({ friends }) => {
   return friends.map(({ avatar, name, isOnline, id }) => (
@@ -10,11 +10,3 @@ export const FriendListItem = ({ friends }) => {
     </Item>
   ));
 };
-
-const Item = styled.li``;
-
-const Status = styled.span``;
-
-const Avatar = styled.img``;
-
-const Name = styled.p``;
