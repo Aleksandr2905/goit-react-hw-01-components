@@ -10,14 +10,11 @@ import transactions from './transactionHistory/transactions.json';
 export const App = () => {
   return (
     <div
-    // style={{
-    //   height: '100vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101',
-    // }}
+      style={{
+        backgroundColor: '#c8f1f7',
+        margin: 0,
+        padding: 0,
+      }}
     >
       <Profile
         username={user.username}

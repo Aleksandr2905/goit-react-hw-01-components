@@ -7,8 +7,7 @@
   margin-left: auto;
   margin-top: 20px;
   border: 1px solid #ccc;
-  padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   border-radius: 5px;
 }
 
@@ -17,10 +16,11 @@
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #ccc;
 }
 
 .name {
@@ -43,20 +43,25 @@
 
 .stats {
   list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  background-color: aliceblue;
 }
 
 .item {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px 0;
 }
 
 .label {
   text-align: center;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .quantity {
