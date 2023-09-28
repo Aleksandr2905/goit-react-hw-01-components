@@ -9,13 +9,7 @@ import transactions from './transactionHistory/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        backgroundColor: '#c8f1f7',
-        margin: 0,
-        padding: 0,
-      }}
-    >
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
